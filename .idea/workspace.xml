@@ -7,7 +7,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -134,9 +134,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PARCIAL_TDD" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modelado_Parcial" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\parcialdos\Modelado_Parcial" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\parcialdos\tests\Unit\Inventario\Producto\Domain" />
+      <recent name="C:\xampp\htdocs\parcialdos\tests\Unit\Inventario\Producto.Domain" />
+      <recent name="C:\xampp\htdocs\parcialdos" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -153,6 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604931506875</updated>
       <workItem from="1604931507919" duration="765000" />
+      <workItem from="1604932300639" duration="999000" />
     </task>
     <servers />
   </component>
@@ -160,9 +172,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604933217572">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604933217572" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604931521989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604931521989" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1604932987172">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604932987172" />
   </component>
 </project>
