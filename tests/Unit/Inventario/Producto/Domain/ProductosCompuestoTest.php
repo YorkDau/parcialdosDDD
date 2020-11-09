@@ -1,10 +1,10 @@
 <?php
 
 
-namespace test;
+namespace Tests\Unit\Inventario\Producto\Domain;
 
-use App\Inventario\Domain\ProductoCompuesto;
-use App\Inventario\Domain\ProductoSimple;
+use Restaurante\Inventario\Domain\ProductoCompuesto;
+use Restaurante\Inventario\Domain\ProductoSimple;
 use PHPUnit\Framework\TestCase;
 
 

@@ -1,9 +1,9 @@
 <?php
 
 
-namespace test;
+namespace Test\Inventario\Producto\Domain;
 
-use App\Inventario\Domain\ProductoSimple;
+use Restaurante\Inventario\Domain\ProductoSimple;
 use PHPUnit\Framework\TestCase;
 
 
