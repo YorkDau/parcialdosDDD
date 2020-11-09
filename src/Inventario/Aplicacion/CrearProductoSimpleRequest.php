@@ -1,25 +1,36 @@
 <?php
 
 
-namespace Restaurante\Inventario\Domain;
+namespace Restaurante\Inventario\Aplicacion;
+
 
 use PhpParser\Node\Scalar\String_;
 
-abstract class Producto
+class CrearProductoSimpleRequest
 {
     private $id;
     private $nombre;
     private $costo;
     private $precio;
     private $cantidad;
+    private $tipo;
 
-    public function __construct(string $id, string $nombre, float $costo = 0, float $precio = 0, int $cantidad = 0)
+    public function __construct(string $id, string $nombre, float $costo, float $precio, int $cantidad, string $tipo)
     {
         $this->id = $id;
-        $this->cantidad = $cantidad;
-        $this->costo = $costo;
         $this->nombre = $nombre;
+        $this->costo = $costo;
         $this->precio = $precio;
+        $this->cantidad = $cantidad;
+        $this->tipo = $tipo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getId(): string
+    {
+        return $this->id;
     }
 
     /**
@@ -55,12 +66,13 @@ abstract class Producto
     }
 
     /**
-     * @param int $cantidad
+     * @return string
      */
-    public function setCantidad(int $cantidad): void
+    public function getTipo(): string
     {
-        $this->cantidad = $cantidad;
+        return $this->tipo;
     }
 
-    abstract function Salida(int $cantidad);
+
 }
+
