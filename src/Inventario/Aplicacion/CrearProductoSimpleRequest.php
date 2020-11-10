@@ -18,11 +18,11 @@ class CrearProductoSimpleRequest
     public function __construct(string $id, string $nombre, float $costo, float $precio, int $cantidad, string $tipo)
     {
         $this->id = $id;
-        $this->nombre = $nombre;
+        $this->nombre = strtoupper($nombre);
         $this->costo = $costo;
         $this->precio = $precio;
         $this->cantidad = $cantidad;
-        $this->tipo = $tipo;
+        $this->tipo = strtoupper($tipo);
     }
 
     /**

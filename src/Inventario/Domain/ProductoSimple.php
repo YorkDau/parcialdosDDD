@@ -6,9 +6,9 @@ class ProductoSimple extends Producto
 {
     private $tipo;
 
-    public function __construct(string $nombre, float $costo, float $precio, int $cantidad, string $tipo)
+    public function __construct(string $nombre, float $costo, float $precio, int $cantidad, string $tipo,int $id=0)
     {
-        parent::__construct($nombre, $costo, $precio, $cantidad);
+        parent::__construct($id,$nombre, $costo, $precio, $cantidad);
         $this->tipo = $tipo;
     }
 
@@ -67,7 +67,7 @@ class ProductoSimple extends Producto
 
     static function formtArray(array $model): self
     {
-        return new self($model['nombre'], $model['costo'], $model['precio'], $model['cantidad'], $model['tipo']);
+        return new self($model['nombre'], $model['costo'], $model['precio'], $model['cantidad'], $model['tipo'],$model['id']);
     }
 
 }

@@ -16,7 +16,6 @@ final  class CrearProductosSimplesTest extends TestCase
     public function guardarProductoSimple()
     {
         $respose = $this->post('api/productoSimple', [
-            'id' => '61574b42-4e40-48fb-bb43-044909ba40cb',
             'nombre' => 'gaseosa litro',
             'costo' => 2000,
             'precio' => 5000,
@@ -27,4 +26,6 @@ final  class CrearProductosSimplesTest extends TestCase
 
         $respose->assertStatus(Response::HTTP_CREATED);
     }
+
+
 }

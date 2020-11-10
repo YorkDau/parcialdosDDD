@@ -39,9 +39,9 @@ abstract class Producto
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getId(): string
+    public function getId(): int
     {
         return $this->id;
     }
