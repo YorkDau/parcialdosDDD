@@ -19,17 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="299364cf-d6bc-4660-bd51-b4d2037cd16d" name="Default Changelist" comment="09/11/2020 - Parcial II-Modelado - &quot;Test-Aceptacion-Producto-Simple&quot;">
-      <change afterPath="$PROJECT_DIR$/src/Inventario/Aplicacion/CrearProductoSimpleRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inventario/Aplicacion/CrearProductoSimpleService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inventario/Domain/IProductoSimpleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="299364cf-d6bc-4660-bd51-b4d2037cd16d" name="Default Changelist" comment="09/11/2020 - Parcial II-Modelado - &quot;Test-Aceptacion-Producto-Simple-Avance&quot;">
+      <change afterPath="$PROJECT_DIR$/src/Inventario/Infraestructura/Persistencia/Eloquent/ProductoSimpleModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inventario/Infraestructura/Persistencia/ProductoSimpleEloquentRepsository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductoSimpleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductoSimpleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventario/Aplicacion/CrearProductoSimpleService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inventario/Aplicacion/CrearProductoSimpleService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventario/Domain/IProductoSimpleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inventario/Domain/IProductoSimpleRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Inventario/Domain/Producto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inventario/Domain/Producto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Productos/Simple/CrearProductosSimplesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Productos/Simple/CrearProductosSimplesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventario/Domain/ProductoSimple.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inventario/Domain/ProductoSimple.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +166,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="CodeWithMe" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -197,7 +196,11 @@
       <updated>1604931506875</updated>
       <workItem from="1604931507919" duration="765000" />
       <workItem from="1604932300639" duration="999000" />
-      <workItem from="1604933320187" duration="9162000" />
+      <workItem from="1604933320187" duration="11466000" />
+      <workItem from="1604950255038" duration="582000" />
+      <workItem from="1604950857037" duration="2996000" />
+      <workItem from="1605041936513" duration="605000" />
+      <workItem from="1605042560027" duration="3062000" />
     </task>
     <task id="LOCAL-00001" summary="09/11/2020 - Parcial II-Modelado - &quot;Modelado del Dominio-Casos_De Puebas&quot;">
       <created>1604933460459</created>
@@ -220,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604938057841</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="09/11/2020 - Parcial II-Modelado - &quot;Test-Aceptacion-Producto-Simple-Avance&quot;">
+      <created>1604948026168</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604948026168</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,41 +246,47 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="09/11/2020 - Parcial II-Modelado - &quot;Modelado del Dominio-Casos_De Puebas&quot;" />
     <MESSAGE value="09/11/2020 - Parcial II-Modelado - &quot;Test-Casos-Pruebas&quot;" />
     <MESSAGE value="09/11/2020 - Parcial II-Modelado - &quot;Test-Aceptacion-Producto-Simple&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="09/11/2020 - Parcial II-Modelado - &quot;Test-Aceptacion-Producto-Simple&quot;" />
+    <MESSAGE value="09/11/2020 - Parcial II-Modelado - &quot;Test-Aceptacion-Producto-Simple-Avance&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="09/11/2020 - Parcial II-Modelado - &quot;Test-Aceptacion-Producto-Simple-Avance&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604933217572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604933217572" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1604947400388">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1605044846783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604947400388" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604931521989">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605044846783" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604957326724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604931521989" />
-    <state x="642" y="171" key="NewPhpClassDialog" timestamp="1604947119496">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604957326724" />
+    <state x="642" y="171" key="NewPhpClassDialog" timestamp="1605044777131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="642" y="171" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604947119496" />
+    <state x="642" y="171" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605044777131" />
     <state x="1274" y="447" key="NewPhpFileDialog" timestamp="1604937085813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1274" y="447" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604937085813" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1604937279375">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1605042585666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604937279375" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604938071430">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605042585666" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604948044536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604938071430" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604948044536" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605042311652">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605042311652" />
   </component>
 </project>

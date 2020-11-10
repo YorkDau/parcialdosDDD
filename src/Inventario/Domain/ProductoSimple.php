@@ -35,10 +35,39 @@ class ProductoSimple extends Producto
     {
         if ($cantidad <= 0) return 'Cantidad Incorrecta, esta debe ser mayor a cero';
         if ($cantidad > 0) {
-         $this->setCantidad($this->getCantidad()-$cantidad);
-         new Salida($cantidad,$this->getNombre(),$this->getCosto(),$this->getPrecio());
+            $this->setCantidad($this->getCantidad() - $cantidad);
+            new Salida($cantidad, $this->getNombre(), $this->getCosto(), $this->getPrecio());
             return sprintf("Se ha retirado con exito %s unidad del producto %s queda en el stock:%s", $cantidad, $this->getNombre(), $this->getCantidad());
 
         }
     }
+
+    public function toArray(bool $updated = false): array
+    {
+        if ($updated) {
+            return [
+                'id' => $this->getId(),
+                'nombre' => $this->getNombre(),
+                'costo' => $this->getCosto(),
+                'precio' => $this->getPrecio(),
+                'cantidad' => $this->getCantidad(),
+                'tipo' => $this->getTipo()
+            ];
+        } else {
+            return [
+                'nombre' => $this->getNombre(),
+                'costo' => $this->getCosto(),
+                'precio' => $this->getPrecio(),
+                'cantidad' => $this->getCantidad(),
+                'tipo' => $this->getTipo()
+            ];
+        }
+
+    }
+
+    static function formtArray(array $model): self
+    {
+        return new self($model['nombre'], $model['costo'], $model['precio'], $model['cantidad'], $model['tipo']);
+    }
+
 }

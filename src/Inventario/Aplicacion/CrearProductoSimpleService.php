@@ -15,10 +15,9 @@ class CrearProductoSimpleService
     {
         $this->repository = $repository;
     }
-
     public function __invoke(CrearProductoSimpleRequest $request)
     {
-        
-        $productoSimple = new ProductoSimple();
+        $productoSimple = new ProductoSimple($request->getNombre(),$request->getCosto(),$request->getPrecio(),$request->getCantidad(),$request->getTipo());
+
     }
 }

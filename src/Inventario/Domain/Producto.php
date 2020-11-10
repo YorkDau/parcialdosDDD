@@ -13,7 +13,7 @@ abstract class Producto
     private $precio;
     private $cantidad;
 
-    public function __construct(string $id, string $nombre, float $costo = 0, float $precio = 0, int $cantidad = 0)
+    public function __construct(int $id, string $nombre, float $costo = 0, float $precio = 0, int $cantidad = 0)
     {
         $this->id = $id;
         $this->cantidad = $cantidad;
@@ -36,6 +36,14 @@ abstract class Producto
     public function getCosto(): float
     {
         return $this->costo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getId(): string
+    {
+        return $this->id;
     }
 
     /**
