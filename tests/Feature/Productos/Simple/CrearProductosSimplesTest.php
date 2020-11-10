@@ -3,12 +3,15 @@
 
 namespace Tests\Feature\Productos\Simple;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Response;
 
 use Tests\TestCase;
 
 final  class CrearProductosSimplesTest extends TestCase
 {
+
+    use RefreshDatabase;
     /**
      * @test
      */

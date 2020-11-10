@@ -8,6 +8,7 @@ use Restaurante\Inventario\Aplicacion\CrearProductoSimpleRequest;
 use Restaurante\Inventario\Aplicacion\CrearProductoSimpleService;
 use Restaurante\Inventario\Domain\IProductoSimpleRepository;
 use Restaurante\Inventario\Domain\ProductoSimple;
+use Restaurante\Inventario\Domain\ProductoSimpleExistente;
 use Restaurante\Inventario\Shared\Domain\IUnidadTrabajo;
 
 class CrearProductoSimpleServiceTest extends ProductoSimpleModuleTestCase
@@ -30,6 +31,12 @@ class CrearProductoSimpleServiceTest extends ProductoSimpleModuleTestCase
         $service($request);
     }
 
-    public function test
+    public function testCrearProductoSimpleDuplicado(){
+        $this->expectException(ProductoSimpleExistente::class);
+        $request = new CrearProductoSimpleRequest(0,'GASEOSA', 2000, 5000, 2, 'VENTA DIRECTA');
+        $producto = new ProductoSimple($request->getNombre(), $request->getCosto(), $request->getPrecio(), $request->getCantidad(),$request->getTipo(), 0);
+        $this->shouldSearch($request->getNombre(),$producto);
+        $this->service->__invoke($request);
+    }
 
 }

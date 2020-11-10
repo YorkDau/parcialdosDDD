@@ -26,7 +26,7 @@ class ProductoSimpleTest extends TestCase
 
     public function testCantidadEntradaNegativaCero(): void
     {
-        $producto = new ProductoSimple('gaseosa litro', 5000, 5000, 2, 'VENTA DIRECTA');
+        $producto = new ProductoSimple('gaseosa litro', 5000, 5000, 2, 'VENTA DIRECTA',0);
         $resultado = $producto->Entrada(0);
         $this->assertEquals('Cantidad de productos que intenta registrar es incorrecta, bebe ser mayor que cero', $resultado);
     }
