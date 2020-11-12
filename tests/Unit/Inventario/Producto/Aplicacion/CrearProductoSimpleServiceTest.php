@@ -20,7 +20,6 @@ class CrearProductoSimpleServiceTest extends ProductoSimpleModuleTestCase
         $this->service = $this->service ?: new CrearProductoSimpleService($this->repository(),$this->unitofwork());
         parent::setUp();
     }
-
     public function testCrearProductoSimpleCorrectamente():void{
         $request = new CrearProductoSimpleRequest(0,'GASEOSA', 2000, 5000, 2, 'VENTA DIRECTA');
         $producto = new ProductoSimple($request->getNombre(), $request->getCosto(), $request->getPrecio(), $request->getCantidad(),$request->getTipo(), 0);
@@ -30,7 +29,6 @@ class CrearProductoSimpleServiceTest extends ProductoSimpleModuleTestCase
         $repository->method('save')->with($producto);
         $service($request);
     }
-
     public function testCrearProductoSimpleDuplicado(){
         $this->expectException(ProductoSimpleExistente::class);
         $request = new CrearProductoSimpleRequest(0,'GASEOSA', 2000, 5000, 2, 'VENTA DIRECTA');

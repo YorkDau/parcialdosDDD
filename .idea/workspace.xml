@@ -19,9 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="299364cf-d6bc-4660-bd51-b4d2037cd16d" name="Default Changelist" comment="09/11/2020 - Parcial II-Modelado - &quot;Test-Aplicacion-Producto-Simple-final&quot;">
+    <list default="true" id="299364cf-d6bc-4660-bd51-b4d2037cd16d" name="Default Changelist" comment="09/11/2020 - Parcial II-Modelado - &quot;Test-PruebasDDDProductosSimples&quot;">
+      <change afterPath="$PROJECT_DIR$/config/l5-swagger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/l5-swagger/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/l5-swagger/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/api-docs/api-docs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/parcialdos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/parcialdos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductoSimpleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductoSimpleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Unit/Inventario/Producto/Aplicacion/CrearProductoSimpleServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Inventario/Producto/Aplicacion/CrearProductoSimpleServiceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/Inventario/Producto/Domain/ProductoSimpleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Inventario/Producto/Domain/ProductoSimpleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Inventario/Producto/Domain/ProductosCompuestoTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Inventario/Producto/Domain/ProductosCompuestoTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +159,11 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/zircote/swagger-php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/swagger-api/swagger-ui" />
+      <path value="$PROJECT_DIR$/vendor/darkaonline/l5-swagger" />
     </include_path>
   </component>
   <component name="ProjectId" id="1k3a0eEWZC1xVyVy4XVAWlcQElp" />
@@ -194,7 +210,9 @@
       <workItem from="1604950255038" duration="582000" />
       <workItem from="1604950857037" duration="2996000" />
       <workItem from="1605041936513" duration="605000" />
-      <workItem from="1605042560027" duration="9552000" />
+      <workItem from="1605042560027" duration="10137000" />
+      <workItem from="1605113285072" duration="1987000" />
+      <workItem from="1605189010715" duration="8918000" />
     </task>
     <task id="LOCAL-00001" summary="09/11/2020 - Parcial II-Modelado - &quot;Modelado del Dominio-Casos_De Puebas&quot;">
       <created>1604933460459</created>
@@ -245,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605051958142</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="09/11/2020 - Parcial II-Modelado - &quot;Test-PruebasDDDProductosSimples&quot;">
+      <created>1605052474231</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605052474231</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +296,8 @@
     <MESSAGE value="09/11/2020 - Parcial II-Modelado - &quot;Test-Aceptacion-Producto-Simple-infraestructura&quot;" />
     <MESSAGE value="09/11/2020 - Parcial II-Modelado - &quot;Test-Aceptacion-Producto-Simple-final&quot;" />
     <MESSAGE value="09/11/2020 - Parcial II-Modelado - &quot;Test-Aplicacion-Producto-Simple-final&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="09/11/2020 - Parcial II-Modelado - &quot;Test-Aplicacion-Producto-Simple-final&quot;" />
+    <MESSAGE value="09/11/2020 - Parcial II-Modelado - &quot;Test-PruebasDDDProductosSimples&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="09/11/2020 - Parcial II-Modelado - &quot;Test-PruebasDDDProductosSimples&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604933217572">
@@ -298,10 +324,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605042585666" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605051987435">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605052483842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605051987435" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605052483842" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605042311652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

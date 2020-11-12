@@ -45,6 +45,5 @@ class ProductosCompuestoTest extends TestCase
         $productoCompuesto = new ProductoCompuesto('perro sencillo',0,5000,0,$productosRegistrados);
         $resultado = $productoCompuesto->Salida(2);
         $this->assertEquals('Se ha retirado con exito 2 perro sencillo costo unitario 3000 precio unitario 5000. En el estock quedan: salchicha 4, lamina de queso 1, pan perro 1', $resultado);
-
     }
 }

@@ -1,0 +1,73 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API PARCIAL",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/productoSimple": {
+            "post": {
+                "summary": "GuardarProductoSimple",
+                "operationId": "App\\Http\\Controllers\\ProductoSimpleController::guardar",
+                "parameters": [
+                    {
+                        "name": "nombre",
+                        "in": "path",
+                        "description": "Nombre del Prodcuto Simple",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "costo",
+                        "in": "path",
+                        "description": "costo del producto simple",
+                        "required": true,
+                        "schema": {
+                            "type": "number"
+                        }
+                    },
+                    {
+                        "name": "precio",
+                        "in": "path",
+                        "description": "precio del producto simple",
+                        "required": true,
+                        "schema": {
+                            "type": "number"
+                        }
+                    },
+                    {
+                        "name": "cantidad",
+                        "in": "path",
+                        "description": "Cantidad del prdducto Simple",
+                        "required": true,
+                        "schema": {
+                            "type": "number"
+                        }
+                    },
+                    {
+                        "name": "tipo",
+                        "in": "path",
+                        "description": "Venta Directa ó Preparacion",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Guardado Exitosamente."
+                    },
+                    "default": {
+                        "description": "Error al Guardar el Producto Simple"
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
